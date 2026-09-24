@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ألبوم أعياد الميلاد - Altusha For Events</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <style>
         /* تنسيق نافذة عرض الصورة بالحجم الكبير */
         .modal {
@@ -45,7 +45,7 @@
         </div>
         
         <ul class="nav-links">
-            <li><a href="index.html" data-ar="العودة للرئيسية" data-ku="گەڕانەوە بۆ سەرەکی" data-en="Back to Home">العودة للرئيسية</a></li>
+            <li><a href="../index.html" data-ar="العودة للرئيسية" data-ku="گەڕانەوە بۆ سەرەکی" data-en="Back to Home">العودة للرئيسية</a></li>
         </ul>
     </header>
 
@@ -55,38 +55,38 @@
         <p class="section-subtitle" data-ar="انقر على أي صورة لمشاهدتها بالحجم الكبير" data-ku="کرتە لە هەر وێنەیەک بکە بۆ بینینی بە قەبارەی گەورە" data-en="Click on any image to view it full size">انقر على أي صورة لمشاهدتها بالحجم الكبير</p>
         
         <div class="gallery-grid">
-            <!-- الصورة الأولى من جهازك -->
-            <div class="gallery-item" style="background-image: url('birthdays/birthday1.jpg');" onclick="openModal('birthdays/birthday1.jpg')">
+            <!-- الصورة الأولى -->
+            <div class="gallery-item" style="background-image: url('birthday1.jpg');" onclick="openModal('birthday1.jpg')">
                 <span data-ar="عيد ميلاد 1" data-ku="یادی لەدایکبوون 1" data-en="Birthday 1">عيد ميلاد 1</span>
             </div>
             
-            <!-- الصورة الثانية من جهازك -->
-            <div class="gallery-item" style="background-image: url('birthdays/birthday2.jpg');" onclick="openModal('birthdays/birthday2.jpg')">
+            <!-- الصورة الثانية -->
+            <div class="gallery-item" style="background-image: url('birthday2.jpg');" onclick="openModal('birthday2.jpg')">
                 <span data-ar="عيد ميلاد 2" data-ku="یادی لەدایکبوون 2" data-en="Birthday 2">عيد ميلاد 2</span>
             </div>
 
-            <!-- الصورة الثالثة من جهازك -->
-            <div class="gallery-item" style="background-image: url('birthdays/birthday3.jpg');" onclick="openModal('birthdays/birthday3.jpg')">
+            <!-- الصورة الثالثة -->
+            <div class="gallery-item" style="background-image: url('birthday3.jpg');" onclick="openModal('birthday3.jpg')">
                 <span data-ar="عيد ميلاد 3" data-ku="یادی لەدایکبوون 3" data-en="Birthday 3">عيد ميلاد 3</span>
             </div>
 
-            <!-- الصورة الرابعة من جهازك -->
-            <div class="gallery-item" style="background-image: url('birthdays/birthday4.jpg');" onclick="openModal('birthdays/birthday4.jpg')">
+            <!-- الصورة الرابعة -->
+            <div class="gallery-item" style="background-image: url('birthday4.jpg');" onclick="openModal('birthday4.jpg')">
                 <span data-ar="عيد ميلاد 4" data-ku="یادی لەدایکبوون 4" data-en="Birthday 4">عيد ميلاد 4</span>
             </div>
 
-            <!-- الصورة الخامسة من جهازك -->
-            <div class="gallery-item" style="background-image: url('birthdays/birthday5.jpg');" onclick="openModal('birthdays/birthday5.jpg')">
+            <!-- الصورة الخامسة -->
+            <div class="gallery-item" style="background-image: url('birthday5.jpg');" onclick="openModal('birthday5.jpg')">
                 <span data-ar="عيد ميلاد 5" data-ku="یادی لەدایکبوون 5" data-en="Birthday 5">عيد ميلاد 5</span>
             </div>
 
-            <!-- الصورة السادسة من جهازك -->
-            <div class="gallery-item" style="background-image: url('birthdays/birthday6.jpg');" onclick="openModal('birthdays/birthday5.jpg')">
+            <!-- الصورة السادسة -->
+            <div class="gallery-item" style="background-image: url('birthday6.jpg');" onclick="openModal('birthday6.jpg')">
                 <span data-ar="عيد ميلاد 6" data-ku="یادی لەدایکبوون 6" data-en="Birthday 6">عيد ميلاد 6</span>
             </div>
 
-             <!-- الصورة السابعة من جهازك -->
-            <div class="gallery-item" style="background-image: url('birthdays/birthday7.jpg');" onclick="openModal('birthdays/birthday5.jpg')">
+            <!-- الصورة السابعة -->
+            <div class="gallery-item" style="background-image: url('birthday7.jpg');" onclick="openModal('birthday7.jpg')">
                 <span data-ar="عيد ميلاد 7" data-ku="یادی لەدایکبوون 7" data-en="Birthday 7">عيد ميلاد 7</span>
             </div>
         </div>
@@ -103,11 +103,11 @@
 
     <!-- سكربت بسيط لفتح وإغلاق الصورة بالحجم الكبير -->
     <script>
-        function openModal(birthdaysrc) {
+        function openModal(imgSrc) {
             const modal = document.getElementById('imgModal');
             const modalImg = document.getElementById('modalImg');
             modal.style.display = 'flex';
-            modalImg.src = birthdaysrc;
+            modalImg.src = imgSrc;
         }
 
         function closeModal() {
