@@ -39,31 +39,31 @@
             <!-- 1. أعياد الميلاد -->
             <a href="birthdays/birthday1.html" class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=500&q=80');">
                 <span data-ar="ديكورات أعياد الميلاد" data-ku="یادی لەدایکبوون" data-en="Birthdays">ديكورات أعياد الميلاد</span>
-                <span class="price-tag">يبدأ من 100,000 د.ع</span>
+                <span class="price-tag" data-ar="يبدأ من 100,000 د.ع" data-ku="لە 100,000 دینارەوە" data-en="Starts from 100,000 IQD">يبدأ من 100,000 د.ع</span>
             </a>
 
             <!-- 2. الخطوبة والزواج -->
             <a href="wedding.html" class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=500&q=80');">
                 <span data-ar="حفلات الخطوبة والزواج" data-ku="هاوسەرگیری و نیشانکردن" data-en="Weddings & Engagements">حفلات الخطوبة والزواج</span>
-                <span class="price-tag">يبدأ من 150,000 د.ع</span>
+                <span class="price-tag" data-ar="يبدأ من 150,000 د.ع" data-ku="لە 150,000 دینارەوە" data-en="Starts from 150,000 IQD">يبدأ من 150,000 د.ع</span>
             </a>
 
             <!-- 3. الحنة -->
             <a href="henna.html" class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=500&q=80');">
                 <span data-ar="حفلات الحنة" data-ku="حەنا" data-en="Henna Parties">حفلات الحنة</span>
-                <span class="price-tag">يبدأ من 120,000 د.ع</span>
+                <span class="price-tag" data-ar="يبدأ من 120,000 د.ع" data-ku="لە 120,000 دینارەوە" data-en="Starts from 120,000 IQD">يبدأ من 120,000 د.ع</span>
             </a>
 
             <!-- 4. الختان -->
             <a href="circumcision.html" class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=500&q=80');">
                 <span data-ar="حفلات الختان" data-ku="خەتتان" data-en="Circumcision">حفلات الختان</span>
-                <span class="price-tag">يبدأ من 90,000 د.ع</span>
+                <span class="price-tag" data-ar="يبدأ من 90,000 د.ع" data-ku="لە 90,000 دینارەوە" data-en="Starts from 90,000 IQD">يبدأ من 90,000 د.ع</span>
             </a>
 
             <!-- 5. التخرج -->
             <a href="graduation.html" class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=500&q=80');">
                 <span data-ar="حفلات التخرج" data-ku="دەرچوون" data-en="Graduation">حفلات التخرج</span>
-                <span class="price-tag">يبدأ من 100,000 د.ع</span>
+                <span class="price-tag" data-ar="يبدأ من 100,000 د.ع" data-ku="لە 100,000 دینارەوە" data-en="Starts from 100,000 IQD">يبدأ من 100,000 د.ع</span>
             </a>
         </div>
     </section>
@@ -76,7 +76,7 @@
         <div class="gallery-grid" style="grid-template-columns: 1fr !important;">
             <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=1000&q=80'); min-height: 250px;">
                 <span data-ar="قسم المبيعات: لبيع كافة التوزيعات وبعض مستلزمات أعياد الميلاد" data-ku="فرۆشتنی دیاری و کەرەستە" data-en="Sales: Distributions & Party Supplies" style="font-size: 18px; line-height: 1.5;">قسم المبيعات: لبيع كافة التوزيعات وبعض مستلزمات أعياد الميلاد</span>
-                <span class="price-tag">متوفر حسب الطلب (بيع مباشر)</span>
+                <span class="price-tag" data-ar="متوفر حسب الطلب (بيع مباشر)" data-ku="بەردەستە بە داواکاری" data-en="Available upon request">متوفر حسب الطلب (بيع مباشر)</span>
             </div>
         </div>
     </section>
@@ -96,5 +96,27 @@
         <p data-ar="جميع الحقوق محفوظة لـ Altusha For Events © 2026" data-ku="هەموو مافەکان پارێزراون بۆ Altusha For Events © 2026" data-en="All rights reserved to Altusha For Events © 2026">جميع الحقوق محفوظة لـ <span>Altusha For Events</span> © 2026</p>
     </footer>
 
+    <!-- كود جافاسكريبت لتشغيل الترجمة وتغيير اتجاه الصفحة -->
+    <script>
+        function changeLang(lang) {
+            const root = document.getElementById('html-root');
+            
+            // تغيير اتجاه الصفحة حسب اللغة (الإنجليزية اليسار لليمين، والعربية والكوردية من اليمين لليسار)
+            if (lang === 'en') {
+                root.setAttribute('dir', 'ltr');
+            } else {
+                root.setAttribute('dir', 'rtl');
+            }
+
+            // تحديث جميع النصوص التي تحتوي على سمة اللغة المختارة
+            const elements = document.querySelectorAll('[data-' + lang + ']');
+            elements.forEach(el => {
+                const text = el.getAttribute('data-' + lang);
+                if (text) {
+                    el.textContent = text;
+                }
+            });
+        }
+    </script>
 </body>
 </html>
