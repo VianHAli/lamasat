@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ألبوم الخطوبة والزواج - Altusha For Events</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
@@ -24,49 +24,38 @@
         </div>
         
         <ul class="nav-links">
-            <li><a href="index.html" data-ar="العودة للرئيسية" data-ku="گەڕانەوە بۆ سەرەکی" data-en="Back to Home">العودة للرئيسية</a></li>
+            <li><a href="../index.html" data-ar="العودة للرئيسية" data-ku="گەڕانەوە بۆ سەرەکی" data-en="Back to Home">العودة للرئيسية</a></li>
         </ul>
     </header>
 
-    <!-- معرض صور حفلات الخطوبة والزواج -->
+    <!-- معرض الصور -->
     <section class="section" style="margin-top: 40px;">
         <h2 class="section-title" data-ar="ديكورات وتصاميم الخطوبة والزواج" data-ku="دیکۆری هاوسەرگیری و نیشانکردن" data-en="Wedding & Engagement Designs">ديكورات وتصاميم الخطوبة والزواج</h2>
         <p class="section-subtitle" data-ar="انقر على أي صورة لمشاهدتها بالحجم الكبير" data-ku="کرتە لە هەر وێنەیەک بکە بۆ بینینی بە قەبارەی گەورە" data-en="Click on any image to view full size">انقر على أي صورة لمشاهدتها بالحجم الكبير</p>
         
         <div class="gallery-grid">
-            <!-- الصورة الأولى -->
-            <div class="gallery-item" style="background-image: url('weddings/wedding1.jpg');" onclick="openModal('weddings/wedding1.jpg')">
+            <div class="gallery-item" style="background-image: url('wedding1.jpg');" onclick="openModal('wedding1.jpg')">
                 <span data-ar="زواج 1" data-ku="هاوسەرگیری 1" data-en="Wedding 1">زواج 1</span>
             </div>
-            
-            <!-- الصورة الثانية -->
-            <div class="gallery-item" style="background-image: url('weddings/wedding2.jpg');" onclick="openModal('weddings/wedding2.jpg')">
+            <div class="gallery-item" style="background-image: url('wedding2.jpg');" onclick="openModal('wedding2.jpg')">
                 <span data-ar="زواج 2" data-ku="هاوسەرگیری 2" data-en="Wedding 2">زواج 2</span>
             </div>
-
-            <!-- الصورة الثالثة -->
-            <div class="gallery-item" style="background-image: url('weddings/wedding3.jpg');" onclick="openModal('weddings/wedding3.jpg')">
+            <div class="gallery-item" style="background-image: url('wedding3.jpg');" onclick="openModal('wedding3.jpg')">
                 <span data-ar="زواج 3" data-ku="هاوسەرگیری 3" data-en="Wedding 3">زواج 3</span>
             </div>
-
-            <!-- الصورة الرابعة -->
-            <div class="gallery-item" style="background-image: url('weddings/wedding4.jpg');" onclick="openModal('weddings/wedding4.jpg')">
+            <div class="gallery-item" style="background-image: url('wedding4.jpg');" onclick="openModal('wedding4.jpg')">
                 <span data-ar="زواج 4" data-ku="هاوسەرگیری 4" data-en="Wedding 4">زواج 4</span>
             </div>
-
-            <!-- الصورة الخامسة -->
-            <div class="gallery-item" style="background-image: url('weddings/wedding5.jpg');" onclick="openModal('weddings/wedding5.jpg')">
+            <div class="gallery-item" style="background-image: url('wedding5.jpg');" onclick="openModal('wedding5.jpg')">
                 <span data-ar="زواج 5" data-ku="هاوسەرگیری 5" data-en="Wedding 5">زواج 5</span>
             </div>
-
-            <!-- الصورة السادسة -->
-            <div class="gallery-item" style="background-image: url('weddings/wedding6.jpg');" onclick="openModal('weddings/wedding6.jpg')">
+            <div class="gallery-item" style="background-image: url('wedding6.jpg');" onclick="openModal('wedding6.jpg')">
                 <span data-ar="زواج 6" data-ku="هاوسەرگیری 6" data-en="Wedding 6">زواج 6</span>
             </div>
         </div>
     </section>
 
-    <!-- نافذة عرض الصورة بالحجم الكبير (Modal) -->
+    <!-- نافذة تكبير الصورة -->
     <div id="imgModal" class="modal" onclick="closeModal()" style="display: none; position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.9); justify-content: center; align-items: center; cursor: pointer;">
         <img id="modalImg" src="" alt="Full Size Image" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);">
     </div>
@@ -75,7 +64,6 @@
         <p data-ar="جميع الحقوق محفوظة لـ Altusha For Events © 2026" data-ku="هەموو مافەکان پارێزراون بۆ Altusha For Events © 2026" data-en="All rights reserved to Altusha For Events © 2026">جميع الحقوق محفوظة لـ <span>Altusha For Events</span> © 2026</p>
     </footer>
 
-    <!-- سكربت تكبير الصور والترجمة -->
     <script>
         function openModal(imgSrc) {
             const modal = document.getElementById('imgModal');
@@ -91,13 +79,11 @@
 
         function changeLang(lang) {
             const root = document.getElementById('html-root');
-            
             if (lang === 'en') {
                 root.setAttribute('dir', 'ltr');
             } else {
                 root.setAttribute('dir', 'rtl');
             }
-
             const elements = document.querySelectorAll('[data-' + lang + ']');
             elements.forEach(el => {
                 const text = el.getAttribute('data-' + lang);

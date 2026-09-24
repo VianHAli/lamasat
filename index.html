@@ -16,7 +16,7 @@
         <button onclick="changeLang('en')">English</button>
     </div>
 
-    <!-- رأس الصفحة: الشعار والعنوان في المنتصف تماماً، وتحته الوصف ثم الأزرار -->
+    <!-- رأس الصفحة -->
     <header class="navbar">
         <div class="logo">
             <h1 data-ar="✨ Altusha For Events ✨" data-ku="✨ Altusha For Events ✨" data-en="✨ Altusha For Events ✨">✨ Altusha For Events ✨</h1>
@@ -30,7 +30,7 @@
         </ul>
     </header>
 
-    <!-- القسم الأول: الإيجار (الأقسام الخمسة) -->
+    <!-- قسم الإيجار (الأقسام الخمسة) -->
     <section id="rental" class="section" style="margin-top: 30px;">
         <h2 class="section-title" data-ar="قسم إيجار الديكورات والمناسبات" data-ku="بەشی کرێی دیکۆر" data-en="Rental Section">قسم إيجار الديكورات والمناسبات</h2>
         <p class="section-subtitle" data-ar="اختر المناسبة لاستعراض كافة التصاميم والأسعار" data-ku="بۆنەکە هەڵبژێرە" data-en="Choose an event to view designs">اختر المناسبة لاستعراض كافة التصاميم والأسعار</p>
@@ -68,7 +68,7 @@
         </div>
     </section>
 
-    <!-- القسم الثاني: المبيعات -->
+    <!-- قسم المبيعات -->
     <section id="sales" class="section" style="margin-top: 50px;">
         <h2 class="section-title" data-ar="قسم المبيعات والتصميم الخاص" data-ku="بەشی فرۆشتن" data-en="Sales Section">قسم المبيعات والتصميم الخاص</h2>
         <p class="section-subtitle" data-ar="كل ما تحتاجه من هدايا وتوزيعات ومستلزمات جاهزة" data-ku="کەرەستەی تایبەت بۆ فرۆشتن" data-en="Special items for sale">كل ما تحتاجه من هدايا وتوزيعات ومستلزمات جاهزة</p>
@@ -96,17 +96,14 @@
         <p data-ar="جميع الحقوق محفوظة لـ Altusha For Events © 2026" data-ku="هەموو مافەکان پارێزراون بۆ Altusha For Events © 2026" data-en="All rights reserved to Altusha For Events © 2026">جميع الحقوق محفوظة لـ <span>Altusha For Events</span> © 2026</p>
     </footer>
 
-    <!-- كود جافاسكريبت لتشغيل الترجمة وتغيير اتجاه الصفحة -->
     <script>
         function changeLang(lang) {
             const root = document.getElementById('html-root');
-            
             if (lang === 'en') {
                 root.setAttribute('dir', 'ltr');
             } else {
                 root.setAttribute('dir', 'rtl');
             }
-
             const elements = document.querySelectorAll('[data-' + lang + ']');
             elements.forEach(el => {
                 const text = el.getAttribute('data-' + lang);
