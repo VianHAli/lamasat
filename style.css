@@ -123,7 +123,7 @@ body {
 
 .gallery-item {
     position: relative;
-    height: 250px; /* يمكنكِ التحكم بارتفاع المربع من هنا */
+    height: 250px;
     border-radius: 15px;
     overflow: hidden;
     display: flex;
@@ -132,10 +132,21 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     
-    /* الخصائص المسؤولة عن ملء الصورة للمربع بشكل متناسق ومثالي */
+    /* الخصائص المسؤولة عن ملء الصورة للمربع */
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
+
+    /* إضافة الإطار الذهبي الفاخر */
+    border: 3px solid #d4af37 !important; /* لون ذهبي أصلي */
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.4), inset 0 0 10px rgba(212, 175, 55, 0.2);
+}
+
+/* تأثير جمالي عند تمرير الماوس فوق المربع */
+.gallery-item:hover {
+    transform: translateY(-5px);
+    border-color: #ffd700 !important; /* درجة ذهبي أسطع وأفتح عند المرور عليها */
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
 }
 
 
