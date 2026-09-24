@@ -116,8 +116,9 @@ body {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 15px;
+    /* يمكنك التحكم بحجم المربع بتغيير القيمة 220px (كلما قللتها اصغر حجم المربع) */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important; 
+    gap: 20px !important; /* المسافة بين المربعات */
 }
 
 .gallery-item {
