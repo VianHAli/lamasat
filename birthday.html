@@ -56,37 +56,37 @@
         
         <div class="gallery-grid">
             <!-- الصورة الأولى من جهازك -->
-            <div class="gallery-item" style="background-image: url('images/birthday1.jpg');" onclick="openModal('images/birthday1.jpg')">
+            <div class="gallery-item" style="background-image: url('birthdays/birthday1.jpg');" onclick="openModal('birthdays/birthday1.jpg')">
                 <span data-ar="عيد ميلاد 1" data-ku="یادی لەدایکبوون 1" data-en="Birthday 1">عيد ميلاد 1</span>
             </div>
             
             <!-- الصورة الثانية من جهازك -->
-            <div class="gallery-item" style="background-image: url('images/birthday2.jpg');" onclick="openModal('images/birthday2.jpg')">
+            <div class="gallery-item" style="background-image: url('birthdays/birthday2.jpg');" onclick="openModal('birthdays/birthday2.jpg')">
                 <span data-ar="عيد ميلاد 2" data-ku="یادی لەدایکبوون 2" data-en="Birthday 2">عيد ميلاد 2</span>
             </div>
 
             <!-- الصورة الثالثة من جهازك -->
-            <div class="gallery-item" style="background-image: url('images/birthday3.jpg');" onclick="openModal('images/birthday3.jpg')">
+            <div class="gallery-item" style="background-image: url('birthdays/birthday3.jpg');" onclick="openModal('birthdays/birthday3.jpg')">
                 <span data-ar="عيد ميلاد 3" data-ku="یادی لەدایکبوون 3" data-en="Birthday 3">عيد ميلاد 3</span>
             </div>
 
             <!-- الصورة الرابعة من جهازك -->
-            <div class="gallery-item" style="background-image: url('images/birthday4.jpg');" onclick="openModal('images/birthday4.jpg')">
+            <div class="gallery-item" style="background-image: url('birthdays/birthday4.jpg');" onclick="openModal('birthdays/birthday4.jpg')">
                 <span data-ar="عيد ميلاد 4" data-ku="یادی لەدایکبوون 4" data-en="Birthday 4">عيد ميلاد 4</span>
             </div>
 
             <!-- الصورة الخامسة من جهازك -->
-            <div class="gallery-item" style="background-image: url('images/birthday5.jpg');" onclick="openModal('images/birthday5.jpg')">
+            <div class="gallery-item" style="background-image: url('birthdays/birthday5.jpg');" onclick="openModal('birthdays/birthday5.jpg')">
                 <span data-ar="عيد ميلاد 5" data-ku="یادی لەدایکبوون 5" data-en="Birthday 5">عيد ميلاد 5</span>
             </div>
 
             <!-- الصورة السادسة من جهازك -->
-            <div class="gallery-item" style="background-image: url('images/birthday6.jpg');" onclick="openModal('images/birthday5.jpg')">
+            <div class="gallery-item" style="background-image: url('birthdays/birthday6.jpg');" onclick="openModal('birthdays/birthday5.jpg')">
                 <span data-ar="عيد ميلاد 6" data-ku="یادی لەدایکبوون 6" data-en="Birthday 6">عيد ميلاد 6</span>
             </div>
 
              <!-- الصورة السابعة من جهازك -->
-            <div class="gallery-item" style="background-image: url('images/birthday7.jpg');" onclick="openModal('images/birthday5.jpg')">
+            <div class="gallery-item" style="background-image: url('birthdays/birthday7.jpg');" onclick="openModal('birthdays/birthday5.jpg')">
                 <span data-ar="عيد ميلاد 7" data-ku="یادی لەدایکبوون 7" data-en="Birthday 7">عيد ميلاد 7</span>
             </div>
         </div>
@@ -103,11 +103,11 @@
 
     <!-- سكربت بسيط لفتح وإغلاق الصورة بالحجم الكبير -->
     <script>
-        function openModal(imageSrc) {
+        function openModal(birthdaysrc) {
             const modal = document.getElementById('imgModal');
             const modalImg = document.getElementById('modalImg');
             modal.style.display = 'flex';
-            modalImg.src = imageSrc;
+            modalImg.src = birthdaysrc;
         }
 
         function closeModal() {
