@@ -126,20 +126,45 @@ body {
     height: 250px;
     border-radius: 15px;
     overflow: hidden;
-    display: flex;
-    align-items: flex-end;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important; /* توسيط المحتوى عمودياً في المنتصف */
+    align-items: center !important; /* توسيط المحتوى أفقياً في المنتصف */
+    text-align: center !important; /* توسيط النص */
     text-decoration: none;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     
-    /* الخصائص المسؤولة عن ملء الصورة للمربع */
+    /* خلفية الصورة */
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
 
-    /* إضافة الإطار الذهبي الفاخر */
-    border: 3px solid #d4af37 !important; /* لون ذهبي أصلي */
+    /* الإطار الذهبي */
+    border: 3px solid #d4af37 !important;
     box-shadow: 0 0 10px rgba(212, 175, 55, 0.4), inset 0 0 10px rgba(212, 175, 55, 0.2);
+}
+
+/* تنسيق عنوان القسم في المنتصف */
+.gallery-item span:not(.price-tag) {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 8px 15px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px; /* مسافة بسيطة بين العنوان والسعر */
+}
+
+/* تنسيق السعر ليكون في الأسفل وبصورة أصغر قليلاً وأنيقة */
+.gallery-item .price-tag {
+    position: static !important; /* إلغاء التموضع المطلق ليكون تحت العنوان مباشرة */
+    background-color: rgba(212, 175, 55, 0.85) !important; /* خلفية ذهبية هادئة للسعر */
+    color: #000 !important;
+    padding: 4px 12px !important;
+    border-radius: 6px;
+    font-size: 13px !important; /* حجم أصغر قليلاً وأنيق */
+    font-weight: bold;
 }
 
 /* تأثير جمالي عند تمرير الماوس فوق المربع */
