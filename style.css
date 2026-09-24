@@ -254,11 +254,12 @@ footer span {
 
 /* تنسيق خاص لمربع قسم المبيعات ليكون متناسقاً مع مربعات الإيجار وبإطار فاخر */
 .sales-card {
-    grid-column: 1 / -1; /* يجعله يتوسط السطر أو يمكنك جعله ضمن الشبكة الطبيعية */
-    max-width: 400px;
+    grid-column: 1 / -1; 
+    max-width: 700px !important; /* قمنا بتكبير العرض من 400px إلى 700px ليصبح أعرض وأفخم */
+    width: 100% !important;
     margin: 0 auto;
-    height: 250px !important; /* نفس ارتفاع مربعات الإيجار تماماً */
-    border: 3px dashed #e6c594 !important; /* إطار مزخرف أو مميز بلون بيجي/ذهبي هادئ */
+    height: 250px !important; /* الارتفاع يبقى متناسقاً ومرتباً */
+    border: 3px dashed #e6c594 !important; /* إطار مزخرف بلون بيجي/ذهبي */
     border-radius: 15px;
     background-size: cover !important;
     background-position: center center !important;
