@@ -5,16 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Altusha For Events - ديكورات الحفلات والمناسبات</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* تصغير حجم البطاقات وجعلها أكثر تناسقاً */
-        .gallery-grid {
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
-            gap: 20px !important;
-        }
-        .gallery-item {
-            height: 250px !important;
-        }
-    </style>
 </head>
 <body>
 
@@ -26,11 +16,11 @@
         <button onclick="changeLang('en')">English</button>
     </div>
 
-    <!-- شريط التنقل العلوي -->
+    <!-- رأس الصفحة: الشعار وتحته الوصف، ثم الأزرار -->
     <header class="navbar">
         <div class="logo">
-            <h1 data-ar="✨ Altusha For Events" data-ku="✨ Altusha For Events" data-en="✨ Altusha For Events">✨ Altusha For Events</h1>
-            <span data-ar="ديكورات الأعراس، الخطوبة وأعياد الميلاد" data-ku="دیکۆری هاوسەرگیری و یادی لەدایکبوون" data-en="Weddings & Events Decoration">ديكورات الأعراس، الخطوبة وأعياد الميلاد</span>
+            <h1 data-ar="✨ Altusha For Events ✨" data-ku="✨ Altusha For Events ✨" data-en="✨ Altusha For Events ✨">✨ Altusha For Events ✨</h1>
+            <span data-ar="ديكورات الأعراس والخطوبة والختان وأعياد الميلاد" data-ku="دیکۆری هاوسەرگیری، نیشانکردن، خەتتان و یادی لەدایکبوون" data-en="Weddings, Engagements, Circumcision & Birthdays">ديكورات الأعراس والخطوبة والختان وأعياد الميلاد</span>
         </div>
         
         <ul class="nav-links">
@@ -40,8 +30,8 @@
         </ul>
     </header>
 
-    <!-- القسم الأول: الإيجار (الأقسام الخمسة بصور من الإنترنت وبحجم أصغر) -->
-    <section id="rental" class="section" style="margin-top: 40px;">
+    <!-- القسم الأول: الإيجار (الأقسام الخمسة) -->
+    <section id="rental" class="section" style="margin-top: 30px;">
         <h2 class="section-title" data-ar="قسم إيجار الديكورات والمناسبات" data-ku="بەشی کرێی دیکۆر" data-en="Rental Section">قسم إيجار الديكورات والمناسبات</h2>
         <p class="section-subtitle" data-ar="اختر المناسبة لاستعراض كافة التصاميم والأسعار" data-ku="بۆنەکە هەڵبژێرە" data-en="Choose an event to view designs">اختر المناسبة لاستعراض كافة التصاميم والأسعار</p>
         
@@ -78,20 +68,20 @@
         </div>
     </section>
 
-    <!-- القسم الثاني: المبيعات (خلفية وتوضيح التوزيعات والمستلزمات) -->
-    <section id="sales" class="section" style="margin-top: 60px;">
+    <!-- القسم الثاني: المبيعات -->
+    <section id="sales" class="section" style="margin-top: 50px;">
         <h2 class="section-title" data-ar="قسم المبيعات والتصميم الخاص" data-ku="بەشی فرۆشتن" data-en="Sales Section">قسم المبيعات والتصميم الخاص</h2>
         <p class="section-subtitle" data-ar="كل ما تحتاجه من هدايا وتوزيعات ومستلزمات جاهزة" data-ku="کەرەستەی تایبەت بۆ فرۆشتن" data-en="Special items for sale">كل ما تحتاجه من هدايا وتوزيعات ومستلزمات جاهزة</p>
         
         <div class="gallery-grid" style="grid-template-columns: 1fr !important;">
-            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=1000&q=80'); min-height: 280px;">
-                <span data-ar="قسم المبيعات: لبيع كافة التوزيعات وبعض مستلزمات أعياد الميلاد" data-ku="فرۆشتنی دیاری و کەرەستە" data-en="Sales: Distributions & Party Supplies" style="font-size: 20px; line-height: 1.6;">قسم المبيعات: لبيع كافة التوزيعات وبعض مستلزمات أعياد الميلاد</span>
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=1000&q=80'); min-height: 250px;">
+                <span data-ar="قسم المبيعات: لبيع كافة التوزيعات وبعض مستلزمات أعياد الميلاد" data-ku="فرۆشتنی دیاری و کەرەستە" data-en="Sales: Distributions & Party Supplies" style="font-size: 18px; line-height: 1.5;">قسم المبيعات: لبيع كافة التوزيعات وبعض مستلزمات أعياد الميلاد</span>
                 <span class="price-tag">متوفر حسب الطلب (بيع مباشر)</span>
             </div>
         </div>
     </section>
 
-    <!-- قسم التواصل (اتصل بنا عبر الواتساب) -->
+    <!-- قسم التواصل -->
     <section id="contact" class="contact-section">
         <div class="contact-container">
             <h2 data-ar="تواصل معنا للحجز والاستفسار" data-ku="پەیوەندیمان پێوە بکە بۆ حجز و پرسیار" data-en="Contact Us for Bookings">تواصل معنا للحجز والاستفسار</h2>
