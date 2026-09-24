@@ -224,10 +224,3 @@ footer span {
     background-position: center !important;
     background-repeat: no-repeat !important;
 }
-
-.gallery-item {
-    background-size: contain !important; /* تجعل الصورة تظهر كاملة بدون قص */
-    background-position: center !important; /* توسيط الصورة داخل المربع */
-    background-repeat: no-repeat !important; /* منع تكرار الصورة */
-    background-color: #1a1a1a !important; /* لون خلفية يحيط بالصورة إذا كان المربع أكبر منها */
-}
