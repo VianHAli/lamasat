@@ -313,3 +313,8 @@ footer span {
     margin: 5px 0;
     color: #fff;
 }
+
+/* إخفاء أي كتابة على صور المعرض داخل الصفحات الفرعية */
+.section .gallery-grid .gallery-item span {
+    display: none !important;
+}
