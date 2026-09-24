@@ -224,3 +224,19 @@ footer span {
     background-position: center !important;
     background-repeat: no-repeat !important;
 }
+
+/* كلاس خاص لتوسيط النص داخل مربعات المبيعات */
+.gallery-item.center-text {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important; /* توسيط عمودي */
+    align-items: center !important; /* توسيط أفقـي */
+    text-align: center !important;
+}
+
+/* تنسيق النص ليبرز بوضوح فوق الصورة */
+.gallery-item.center-text span {
+    background-color: rgba(0, 0, 0, 0.6); /* خلفية شفافة تحت النص لزيادة الوضوح */
+    padding: 10px 20px;
+    border-radius: 8px;
+}
