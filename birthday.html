@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ألبوم أعياد الميلاد - Altusha For Events</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* تنسيق نافذة عرض الصورة بالحجم الكبير */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+        }
+        .gallery-item {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- شريط التنقل العلوي -->
+    <header class="navbar">
+        <div class="logo">
+            <h1 data-ar="✨ Altusha" data-ku="✨ Altusha" data-en="✨ Altusha">✨ Altusha</h1>
+            <span data-ar="Birthday Album" data-ku="Birthday Album" data-en="Birthday Album">أعياد الميلاد</span>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html" data-ar="العودة للرئيسية" data-ku="گەڕانەوە بۆ سەرەکی" data-en="Back to Home">العودة للرئيسية</a></li>
+        </ul>
+    </header>
+
+    <!-- معرض صور أعياد الميلاد الخاصة بك -->
+    <section class="section" style="margin-top: 100px;">
+        <h2 class="section-title" data-ar="ألبوم صور أعياد الميلاد" data-ku="ئالبومی وێنەکانی یادی لەدایکبوون" data-en="Birthday Photo Album">ألبوم صور أعياد الميلاد</h2>
+        <p class="section-subtitle" data-ar="انقر على أي صورة لمشاهدتها بالحجم الكبير" data-ku="کرتە لە هەر وێنەیەک بکە بۆ بینینی بە قەبارەی گەورە" data-en="Click on any image to view it full size">انقر على أي صورة لمشاهدتها بالحجم الكبير</p>
+        
+        <div class="gallery-grid">
+            <!-- الصورة الأولى من جهازك -->
+            <div class="gallery-item" style="background-image: url('images/birthday1.jpg');" onclick="openModal('images/birthday1.jpg')">
+                <span data-ar="عيد ميلاد 1" data-ku="یادی لەدایکبوون 1" data-en="Birthday 1">عيد ميلاد 1</span>
+            </div>
+            
+            <!-- الصورة الثانية من جهازك -->
+            <div class="gallery-item" style="background-image: url('images/birthday2.jpg');" onclick="openModal('images/birthday2.jpg')">
+                <span data-ar="عيد ميلاد 2" data-ku="یادی لەدایکبوون 2" data-en="Birthday 2">عيد ميلاد 2</span>
+            </div>
+
+            <!-- الصورة الثالثة من جهازك -->
+            <div class="gallery-item" style="background-image: url('images/birthday3.jpg');" onclick="openModal('images/birthday3.jpg')">
+                <span data-ar="عيد ميلاد 3" data-ku="یادی لەدایکبوون 3" data-en="Birthday 3">عيد ميلاد 3</span>
+            </div>
+
+            <!-- الصورة الرابعة من جهازك -->
+            <div class="gallery-item" style="background-image: url('images/birthday4.jpg');" onclick="openModal('images/birthday4.jpg')">
+                <span data-ar="عيد ميلاد 4" data-ku="یادی لەدایکبوون 4" data-en="Birthday 4">عيد ميلاد 4</span>
+            </div>
+
+            <!-- الصورة الخامسة من جهازك -->
+            <div class="gallery-item" style="background-image: url('images/birthday5.jpg');" onclick="openModal('images/birthday5.jpg')">
+                <span data-ar="عيد ميلاد 5" data-ku="یادی لەدایکبوون 5" data-en="Birthday 5">عيد ميلاد 5</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- نافذة العرض الكبير (Modal) -->
+    <div id="imgModal" class="modal" onclick="closeModal()">
+        <img id="modalImg" src="" alt="Full Size Image">
+    </div>
+
+    <footer>
+        <p data-ar="جميع الحقوق محفوظة لـ Altusha For Events © 2026" data-ku="هەموو مافەکان پارێزراون بۆ Altusha For Events © 2026" data-en="All rights reserved to Altusha For Events © 2026">جميع الحقوق محفوظة لـ <span>Altusha For Events</span> © 2026</p>
+    </footer>
+
+    <!-- سكربت بسيط لفتح وإغلاق الصورة بالحجم الكبير -->
+    <script>
+        function openModal(imageSrc) {
+            const modal = document.getElementById('imgModal');
+            const modalImg = document.getElementById('modalImg');
+            modal.style.display = 'flex';
+            modalImg.src = imageSrc;
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imgModal');
+            modal.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

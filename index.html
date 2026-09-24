@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altusha For Events - لتصميم ديكور المناسبات والتوزيعات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- شريط التنقل العلوي -->
+    <header class="navbar">
+        <div class="logo">
+            <h1 data-ar="✨ Altusha" data-ku="✨ Altusha" data-en="✨ Altusha">✨ Altusha</h1>
+            <span data-ar="For Events & Gifts" data-ku="For Events & Gifts" data-en="For Events & Gifts">For Events</span>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="#home" data-ar="الرئيسية" data-ku="سەرەکی" data-en="Home">الرئيسية</a></li>
+            <li><a href="#services" data-ar="خدمات الديكور" data-ku="خزمەتگوزارییەکانی دیکۆر" data-en="Decor Services">خدمات الديكور</a></li>
+            <li><a href="#shop" data-ar="متجر التوزيعات" data-ku="فرۆشگای دیارییەکان" data-en="Gift Shop">متجر التوزيعات</a></li>
+            <li><a href="#gallery" data-ar="معرض الأعمال" data-ku="پێشانگای کارەکان" data-en="Gallery">معرض الأعمال</a></li>
+            <li><a href="#contact" class="btn-contact" data-ar="اتصل بنا" data-ku="پەیوەندی" data-en="Contact">اتصل بنا</a></li>
+        </ul>
+
+        <!-- أزرار تبديل اللغة -->
+        <div class="lang-switcher">
+            <button onclick="setLanguage('ar')">عربي</button>
+            <button onclick="setLanguage('ku')">کوردی</button>
+            <button onclick="setLanguage('en')">English</button>
+        </div>
+    </header>
+
+    <!-- الواجهة الرئيسية -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 data-ar="Altusha لصناعة أجمل الذكريات" data-ku="Altusha بۆ دروستکردنی جوانترین یادگارییەکان" data-en="Altusha for Creating Beautiful Memories">Altusha لصناعة أجمل الذكريات</h2>
+            <p data-ar="نصمم ديكورات أفراحك، حناتك، أعياد الميلاد، والختان بأعلى معايير الفخامة والذوق الرفيع، مع تشكيلة واسعة من أرقى التوزيعات." 
+               data-ku="دیکۆری ئاهەنگی هاوسەرگیری، خەنبەندان، یادی لەدایکبوون و خەتەنەکردن بە بەرزترین کوالێتی و جوانترین شێواز دیزاین دەکەین." 
+               data-en="We design luxurious decorations for weddings, henna nights, birthdays, and circumcisions with exquisite taste.">
+               نصمم ديكورات أفراحك، حناتك، أعياد الميلاد، والختان بأعلى معايير الفخامة والذوق الرفيع، مع تشكيلة واسعة من أرقى التوزيعات.
+            </p>
+            <a href="#shop" class="btn-primary" data-ar="تصفح متجر التوزيعات" data-ku="تێڕوانینی فرۆشگای دیارییەکان" data-en="Browse Shop">تصفح متجر التوزيعات</a>
+        </div>
+    </section>
+
+    <!-- خدمات الديكور -->
+    <section id="services" class="section">
+        <h2 class="section-title" data-ar="خدمات ديكور المناسبات" data-ku="خزمەتگوزارییەکانی دیکۆری بۆنەکان" data-en="Event Decor Services">خدمات ديكور المناسبات</h2>
+        <p class="section-subtitle" data-ar="نحول مناسباتك إلى لوحات فنية متكاملة" data-ku="بۆنەکانتان دەگۆڕین بۆ تابلۆی هونەری ناوازە" data-en="We turn your events into complete works of art">نحول مناسباتك إلى لوحات فنية متكاملة</p>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <h3 data-ar="حفلات الزفاف والخطوبة" data-ku="ئاهەنگی هاوسەرگیری و دەزگیرانی" data-en="Weddings & Engagements">حفلات الزفاف والخطوبة</h3>
+                <p data-ar="تنسيق ديكورات قاعات وأعراس تحبس الأنفاس." data-ku="ڕازاندنەوەی هۆڵ و ئاهەنگی ناوازە و سەرنجڕاکێش." data-en="Breathtaking hall and wedding decorations.">تنسيق ديكورات قاعات وأعراس تحبس الأنفاس.</p>
+            </div>
+            <div class="service-card">
+                <h3 data-ar="حفلات الحنة" data-ku="ئاهەنگی خەنبەندان" data-en="Henna Parties">حفلات الحنة</h3>
+                <p data-ar="أجواء تقليدية وعصرية مميزة تليق بهذه الليلة الخاصة." data-ku="کەشوهەوایەکی نەریتی و مۆدێرن شایستەی ئەم شەهە تایبەتە." data-en="Traditional and modern vibes tailored for this special night.">أجواء تقليدية وعصرية مميزة تليق بهذه الليلة الخاصة.</p>
+            </div>
+            <div class="service-card">
+                <h3 data-ar="أعياد الميلاد" data-ku="یادی لەدایکبوون" data-en="Birthdays">أعياد الميلاد</h3>
+                <p data-ar="أفكار مبهجة ومبتكرة تفرح قلوب الكبار والصغار." data-ku="بیری داهێنەرانە و دڵخۆشکەر بۆ گەورە و بچووک." data-en="Joyful and creative ideas that bring smiles to everyone.">أفكار مبهجة ومبتكرة تفرح قلوب الكبار والصغار.</p>
+            </div>
+            <div class="service-card">
+                <h3 data-ar="حفلات الختان" data-ku="ئاهەنگی خەتەنە" data-en="Circumcision Parties">حفلات الختان</h3>
+                <p data-ar="تنسيقات لطيفة ومبهجة لهذه المناسبة المباركة." data-ku="ڕازاندنەوەی ناسک و دڵخۆشکەر بۆ ئەم بۆنە پیرۆزە." data-en="Delightful and cheerful setups for this blessed occasion.">تنسيقات لطيفة ومبهجة لهذه المناسبة المباركة.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- متجر التوزيعات -->
+    <section id="shop" class="section bg-light">
+        <h2 class="section-title" data-ar="متجر توزيعات Altusha" data-ku="فرۆشگای دیارییەکانی Altusha" data-en="Altusha Gift Shop">متجر توزيعات Altusha</h2>
+        <p class="section-subtitle" data-ar="أرقى التوزيعات والهدايا لكل المناسبات" data-ku="جوانترین دیاری بۆ هەموو بۆنەکان" data-en="Finest gifts and favors for all occasions">أرقى التوزيعات والهدايا لكل المناسبات</p>
+        
+        <div class="shop-grid">
+            <div class="product-card">
+                <div class="product-img baby" data-ar="توزيعات بيبي" data-ku="دیاری کۆرپە" data-en="Baby Favors">توزيعات بيبي</div>
+                <div class="product-info">
+                    <h3 data-ar="توزيعات المواليد والبيبي" data-ku="دیاری کۆرپەی تازە لەدایکبوو" data-en="Baby Shower Favors">توزيعات المواليد والبيبي</h3>
+                    <div class="price">15$</div>
+                    <a href="#contact" class="btn-card" data-ar="اطلب الآن" data-ku="داواکردن" data-en="Order Now">اطلب الآن</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img birthday" data-ar="أعياد ميلاد" data-ku="یادی لەدایکبوون" data-en="Birthdays">أعياد ميلاد</div>
+                <div class="product-info">
+                    <h3 data-ar="توزيعات أعياد الميلاد" data-ku="دیاری یادی لەدایکبوون" data-en="Birthday Favors">توزيعات أعياد الميلاد</h3>
+                    <div class="price">20$</div>
+                    <a href="#contact" class="btn-card" data-ar="اطلب الآن" data-ku="داواکردن" data-en="Order Now">اطلب الآن</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img engagement" data-ar="خطوبة وزفاف" data-ku="دەزگیرانی و هاوسەرگیری" data-en="Engagement & Wedding">خطوبة وزفاف</div>
+                <div class="product-info">
+                    <h3 data-ar="توزيعات الخطوبة والزواج" data-ku="دیاری دەزگیرانی و هاوسەرگیری" data-en="Engagement Favors">توزيعات الخطوبة والزواج</h3>
+                    <div class="price">35$</div>
+                    <a href="#contact" class="btn-card" data-ar="اطلب الآن" data-ku="داواکردن" data-en="Order Now">اطلب الآن</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img henna" data-ar="حنة وختان" data-ku="خەنبەندان و خەتەنە" data-en="Henna & Circumcision">حنة وختان</div>
+                <div class="product-info">
+                    <h3 data-ar="توزيعات الحنة والختان" data-ku="دیاری خەنبەندان و خەتەنە" data-en="Henna Favors">توزيعات الحنة والختان</h3>
+                    <div class="price">25$</div>
+                    <a href="#contact" class="btn-card" data-ar="اطلب الآن" data-ku="داواکردن" data-en="Order Now">اطلب الآن</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ألبوم الصور ومعرض الأعمال -->
+    <section id="gallery" class="section">
+        <h2 class="section-title" data-ar="ألبوم أعمال Altusha" data-ku="ئالبومی کارەکانی Altusha" data-en="Altusha Gallery Album">ألبوم أعمال Altusha</h2>
+        <p class="section-subtitle" data-ar="توثيق لأجمل اللحظات والديكورات التي نفذناها بكل حب" data-ku="بەڵگەنامەی جوانترین ساتەکان و دیکۆرەکان" data-en="A showcase of our finest event designs">توثيق لأجمل اللحظات والديكورات التي نفذناها بكل حب</p>
+        
+        <div class="gallery-grid">
+            <!-- بطاقة أعياد الميلاد (قابلة للنقر وتنقلك إلى صفحة birthday.html الخاصة بألبوم الصور) -->
+            <a href="birthday.html" class="gallery-item" style="background-image: url('images/birthday1.jpg'); display: block; text-decoration: none;">
+                <span data-ar="أعياد الميلاد (اضغط للعرض)" data-ku="یادی لەدایکبوون" data-en="Birthdays">أعياد الميلاد</span>
+            </a>
+
+            <!-- صور أخرى للمعرض -->
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=600&q=80');">
+                <span data-ar="حفلات الزفاف والخطوبة" data-ku="ئاهەنگی هاوسەرگیری" data-en="Weddings">حفلات الزفاف والخطوبة</span>
+            </div>
+            
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=600&q=80');">
+                <span data-ar="تنسيق الحنة" data-ku="ڕازاندنەوەی خەنبەندان" data-en="Henna Setup">تنسيق الحنة</span>
+            </div>
+
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80');">
+                <span data-ar="التوزيعات والهدايا" data-ku="دیاری و پاداشتەکان" data-en="Gifts & Favors">التوزيعات والهدايا</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2 data-ar="تواصل معنا للحجز والاستفسار" data-ku="پەیوەندیمان پێوە بکە بۆ حجز و پرسیار" data-en="Contact Us for Bookings">تواصل معنا للحجز والاستفسار</h2>
+            <p data-ar="يسعدنا تلقي طلباتكم وتصميم ديكور مناسبتكم القادمة بكل حب." data-ku="خۆشحاڵ دەبین بە پێشوازیکردن لە داواکارییەکانتان." data-en="We are happy to receive your requests and design your next event.">يسعدنا تلقي طلباتكم وتصميم ديكور مناسبتكم القادمة بكل حب.</p>
+            <a href="https://wa.me/" target="_blank" class="whatsapp-btn">
+                <span>💬</span> <span data-ar="راسلنا عبر واتساب" data-ku="پەیوەندیمان پێوە بکە لە واتساب" data-en="Chat on WhatsApp">راسلنا عبر واتساب</span>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p data-ar="جميع الحقوق محفوظة لـ Altusha For Events © 2026" data-ku="هەموو مافەکان پارێزراون بۆ Altusha For Events © 2026" data-en="All rights reserved to Altusha For Events © 2026">جميع الحقوق محفوظة لـ <span>Altusha For Events</span> © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
