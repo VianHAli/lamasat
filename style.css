@@ -177,3 +177,67 @@ footer {
     color: #aaa;
     font-size: 14px;
 }
+
+/* تنسيق بطاقات الأقسام لتكون متجاوبة ومثالية للهاتف والحاسوب */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    height: 180px; /* ارتفاع مناسب جداً للشاشات الصغيرة */
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+/* تكبير الارتفاع قليلاً على شاشات الحاسوب الكبيرة */
+@media (min-width: 768px) {
+    .gallery-item {
+        height: 220px;
+    }
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.gallery-item::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.1) 60%);
+}
+
+.gallery-item span {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.price-tag {
+    position: relative;
+    z-index: 2;
+    background-color: #d4af37;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    width: fit-content;
+    margin-top: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
