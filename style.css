@@ -251,3 +251,39 @@ footer span {
     padding: 10px 20px;
     border-radius: 8px;
 }
+
+/* تنسيق خاص لمربع قسم المبيعات ليكون متناسقاً مع مربعات الإيجار وبإطار فاخر */
+.sales-card {
+    grid-column: 1 / -1; /* يجعله يتوسط السطر أو يمكنك جعله ضمن الشبكة الطبيعية */
+    max-width: 400px;
+    margin: 0 auto;
+    height: 250px !important; /* نفس ارتفاع مربعات الإيجار تماماً */
+    border: 3px dashed #e6c594 !important; /* إطار مزخرف أو مميز بلون بيجي/ذهبي هادئ */
+    border-radius: 15px;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    position: relative;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    box-shadow: 0 0 15px rgba(230, 197, 148, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sales-card:hover {
+    transform: translateY(-5px);
+    border-color: #f3d085 !important;
+    box-shadow: 0 0 25px rgba(243, 208, 133, 0.6);
+}
+
+/* تنسيق النصوص داخل مربع المبيعات لتبدو واضحة وجميلة */
+.sales-card span {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 8px 15px;
+    border-radius: 8px;
+    margin: 5px 0;
+    color: #fff;
+}
