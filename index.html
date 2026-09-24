@@ -36,8 +36,8 @@
         <p class="section-subtitle" data-ar="اختر المناسبة لاستعراض كافة التصاميم والأسعار" data-ku="بۆنەکە هەڵبژێرە" data-en="Choose an event to view designs">اختر المناسبة لاستعراض كافة التصاميم والأسعار</p>
         
         <div class="gallery-grid">
-            <!-- 1. أعياد الميلاد -->
-            <a href="birthdays/birthday1.html" class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=500&q=80');">
+            <!-- 1. أعياد الميلاد (صورة جديدة مخصصة لأعياد الميلاد والبالونات) -->
+            <a href="birthdays/birthday1.html" class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1464349153735-7db50ed83c84?auto=format&fit=crop&w=500&q=80');">
                 <span data-ar="ديكورات أعياد الميلاد" data-ku="یادی لەدایکبوون" data-en="Birthdays">ديكورات أعياد الميلاد</span>
                 <span class="price-tag" data-ar="يبدأ من 100,000 د.ع" data-ku="لە 100,000 دینارەوە" data-en="Starts from 100,000 IQD">يبدأ من 100,000 د.ع</span>
             </a>
@@ -48,8 +48,8 @@
                 <span class="price-tag" data-ar="يبدأ من 150,000 د.ع" data-ku="لە 150,000 دینارەوە" data-en="Starts from 150,000 IQD">يبدأ من 150,000 د.ع</span>
             </a>
 
-            <!-- 3. الحنة -->
-            <a href="henna.html" class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=500&q=80');">
+            <!-- 3. الحنة (صورة تعبيرية لطابع الحنة التركية الفخمة) -->
+            <a href="henna.html" class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=500&q=80');">
                 <span data-ar="حفلات الحنة" data-ku="حەنا" data-en="Henna Parties">حفلات الحنة</span>
                 <span class="price-tag" data-ar="يبدأ من 120,000 د.ع" data-ku="لە 120,000 دینارەوە" data-en="Starts from 120,000 IQD">يبدأ من 120,000 د.ع</span>
             </a>
@@ -61,7 +61,7 @@
             </a>
 
             <!-- 5. التخرج -->
-            <a href="graduation.html" class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=500&q=80');">
+            <a href="graduation.html" class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=500&q=80');">
                 <span data-ar="حفلات التخرج" data-ku="دەرچوون" data-en="Graduation">حفلات التخرج</span>
                 <span class="price-tag" data-ar="يبدأ من 100,000 د.ع" data-ku="لە 100,000 دینارەوە" data-en="Starts from 100,000 IQD">يبدأ من 100,000 د.ع</span>
             </a>
@@ -101,14 +101,12 @@
         function changeLang(lang) {
             const root = document.getElementById('html-root');
             
-            // تغيير اتجاه الصفحة حسب اللغة (الإنجليزية اليسار لليمين، والعربية والكوردية من اليمين لليسار)
             if (lang === 'en') {
                 root.setAttribute('dir', 'ltr');
             } else {
                 root.setAttribute('dir', 'rtl');
             }
 
-            // تحديث جميع النصوص التي تحتوي على سمة اللغة المختارة
             const elements = document.querySelectorAll('[data-' + lang + ']');
             elements.forEach(el => {
                 const text = el.getAttribute('data-' + lang);
