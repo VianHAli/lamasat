@@ -122,20 +122,20 @@ body {
 }
 
 .gallery-item {
-    height: 180px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 12px;
-    overflow: hidden;
     position: relative;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    text-decoration: none;
+    height: 250px; /* يمكنكِ التحكم بارتفاع المربع من هنا */
+    border-radius: 15px;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 15px;
-
+    align-items: flex-end;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     
+    /* الخصائص المسؤولة عن ملء الصورة للمربع بشكل متناسق ومثالي */
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
 }
 
 
