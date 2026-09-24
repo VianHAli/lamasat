@@ -133,7 +133,11 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     padding: 15px;
+
+    
 }
+
+
 
 @media (min-width: 768px) {
     .gallery-item {
@@ -212,4 +216,10 @@ footer {
 
 footer span {
     color: #d4af37;
+}
+
+.gallery-item {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
