@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ألبوم حفلات التخرج - Altusha For Events</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- شريط اختيار اللغات العلوي -->
+    <div class="lang-bar">
+        <span style="font-weight: bold; margin-left: 10px;">اللغة / Language:</span>
+        <button onclick="changeLang('ar')">العربية</button>
+        <button onclick="changeLang('ku')">کوردی</button>
+        <button onclick="changeLang('en')">English</button>
+    </div>
+
+    <!-- شريط التنقل العلوي -->
+    <header class="navbar">
+        <div class="logo">
+            <h1 data-ar="✨ Altusha For Events ✨" data-ku="✨ Altusha For Events ✨" data-en="✨ Altusha For Events ✨">✨ Altusha For Events ✨</h1>
+            <span data-ar="ألبوم صور حفلات التخرج" data-ku="ئالبومی وێنەکانی دەرچوون" data-en="Graduation Album">ألبوم صور حفلات التخرج</span>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="../index.html" data-ar="العودة للرئيسية" data-ku="گەڕانەوە بۆ سەرەکی" data-en="Back to Home">العودة للرئيسية</a></li>
+        </ul>
+    </header>
+
+    <!-- معرض صور حفلات التخرج -->
+    <section class="section" style="margin-top: 40px;">
+        <h2 class="section-title" data-ar="ديكورات وتصاميم حفلات التخرج" data-ku="دیکۆری دەرچوون" data-en="Graduation Party Designs">ديكورات وتصاميم حفلات التخرج</h2>
+        <p class="section-subtitle" data-ar="انقر على أي صورة لمشاهدتها بالحجم الكبير" data-ku="کرتە لە هەر وێنەیەک بکە بۆ بینینی بە قەبارەی گەورە" data-en="Click on any image to view full size">انقر على أي صورة لمشاهدتها بالحجم الكبير</p>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item" style="background-image: url('graduation1.jpg');" onclick="openModal('graduation1.jpg')">
+                <span data-ar="تخرج 1" data-ku="دەرچوون 1" data-en="Graduation 1">تخرج 1</span>
+            </div>
+            <div class="gallery-item" style="background-image: url('graduation2.jpg');" onclick="openModal('graduation2.jpg')">
+                <span data-ar="تخرج 2" data-ku="دەرچوون 2" data-en="Graduation 2">تخرج 2</span>
+            </div>
+            <div class="gallery-item" style="background-image: url('graduation3.jpg');" onclick="openModal('graduation3.jpg')">
+                <span data-ar="تخرج 3" data-ku="دەرچوون 3" data-en="Graduation 3">تخرج 3</span>
+            </div>
+            <div class="gallery-item" style="background-image: url('graduation4.jpg');" onclick="openModal('graduation4.jpg')">
+                <span data-ar="تخرج 4" data-ku="دەرچوون 4" data-en="Graduation 4">تخرج 4</span>
+            </div>
+            <div class="gallery-item" style="background-image: url('graduation5.jpg');" onclick="openModal('graduation5.jpg')">
+                <span data-ar="تخرج 5" data-ku="دەرچوون 5" data-en="Graduation 5">تخرج 5</span>
+            </div>
+            <div class="gallery-item" style="background-image: url('graduation6.jpg');" onclick="openModal('graduation6.jpg')">
+                <span data-ar="تخرج 6" data-ku="دەرچوون 6" data-en="Graduation 6">تخرج 6</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- نافذة تكبير الصورة -->
+    <div id="imgModal" class="modal" onclick="closeModal()" style="display: none; position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.9); justify-content: center; align-items: center; cursor: pointer;">
+        <img id="modalImg" src="" alt="Full Size Image" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);">
+    </div>
+
+    <footer>
+        <p data-ar="جميع الحقوق محفوظة لـ Altusha For Events © 2026" data-ku="هەموو مافەکان پارێزراون بۆ Altusha For Events © 2026" data-en="All rights reserved to Altusha For Events © 2026">جميع الحقوق محفوظة لـ <span>Altusha For Events</span> © 2026</p>
+    </footer>
+
+    <script>
+        function openModal(imgSrc) {
+            const modal = document.getElementById('imgModal');
+            const modalImg = document.getElementById('modalImg');
+            modal.style.display = 'flex';
+            modalImg.src = imgSrc;
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imgModal');
+            modal.style.display = 'none';
+        }
+
+        function changeLang(lang) {
+            const root = document.getElementById('html-root');
+            if (lang === 'en') {
+                root.setAttribute('dir', 'ltr');
+            } else {
+                root.setAttribute('dir', 'rtl');
+            }
+            const elements = document.querySelectorAll('[data-' + lang + ']');
+            elements.forEach(el => {
+                const text = el.getAttribute('data-' + lang);
+                if (text) {
+                    el.textContent = text;
+                }
+            });
+        }
+    </script>
+</body>
+</html>
